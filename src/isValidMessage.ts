@@ -1,6 +1,6 @@
 import { Commit } from './types';
 
-const DEFAULT_COMMITS = ['feat', 'fix', 'docs', 'chore', 'test', 'refactor', 'perf'];
+const DEFAULT_COMMITS = ['feat', 'fix', 'maint', 'enhance'];
 
 export const isValidMessage = (message: string, availableTypes = DEFAULT_COMMITS): boolean => {
   if (message.startsWith('Revert ') || message.startsWith('Merge ')) {
