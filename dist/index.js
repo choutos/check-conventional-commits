@@ -16306,7 +16306,7 @@ function getPageLinks (link) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isValidMessageExists = exports.isValidMessage = void 0;
-var DEFAULT_COMMITS = ['feat', 'fix', 'docs', 'chore', 'test', 'refactor', 'perf'];
+var DEFAULT_COMMITS = ['feat', 'fix', 'maint', 'enhance'];
 var isValidMessage = function (message, availableTypes) {
     if (availableTypes === void 0) { availableTypes = DEFAULT_COMMITS; }
     if (message.startsWith('Revert ') || message.startsWith('Merge ')) {
